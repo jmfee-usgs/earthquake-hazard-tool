@@ -24,8 +24,11 @@ var addExports = function (basedir, files) {
 // List individual modules here. Each listed module will be aliased in the
 // "bundle", and will be set as an external in "test"s and "example"s.
 
+EXPORTS.push(NODE_MODULES + '/d3/d3.js:d3');
+
 // hazdev-webutils exports
 addExports('node_modules/hazdev-webutils/src', [
+  'util/Util',
   'util/Xhr'
 ]);
 // project exports
